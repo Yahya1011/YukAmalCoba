@@ -1,4 +1,4 @@
-package com.example.yukamalcoba.Activity
+package com.example.yukamalcoba.view.activity
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -7,11 +7,11 @@ import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
 import androidx.viewpager.widget.ViewPager
 import com.example.yukamalcoba.*
-import com.example.yukamalcoba.Adapter.PagerAdapter
-import com.example.yukamalcoba.Fragments.BeritaFragment
-import com.example.yukamalcoba.Fragments.GaleriFragment
-import com.example.yukamalcoba.Fragments.InformasiFragment
-import com.example.yukamalcoba.Fragments.LaporanFragment
+import com.example.yukamalcoba.adapter.PagerAdapter
+import com.example.yukamalcoba.fragment.BeritaFragment
+import com.example.yukamalcoba.fragment.GaleriFragment
+import com.example.yukamalcoba.fragment.InformasiFragment
+import com.example.yukamalcoba.fragment.LaporanFragment
 import com.google.android.material.tabs.TabLayout
 
 class Informasi1Activity : AppCompatActivity() {

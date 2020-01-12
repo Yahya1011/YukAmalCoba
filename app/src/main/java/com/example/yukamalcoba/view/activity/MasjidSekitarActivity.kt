@@ -1,12 +1,12 @@
-package com.example.yukamalcoba.Activity
+package com.example.yukamalcoba.view.activity
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.yukamalcoba.R
 
-class AcaraActivity : AppCompatActivity() {
+class MasjidSekitarActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_acara)
+        setContentView(R.layout.activity_masjid_sekitar)
     }
 }

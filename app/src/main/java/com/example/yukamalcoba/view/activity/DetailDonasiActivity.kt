@@ -1,4 +1,4 @@
-package com.example.yukamalcoba.Activity
+package com.example.yukamalcoba.view.activity
 
 import android.os.Bundle
 import android.Manifest

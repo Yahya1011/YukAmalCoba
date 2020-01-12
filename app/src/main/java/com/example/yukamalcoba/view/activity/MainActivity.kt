@@ -1,4 +1,4 @@
-package com.example.yukamalcoba.Activity
+package com.example.yukamalcoba.view.activity
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,7 +6,8 @@ import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentTransaction
 import com.example.yukamalcoba.*
-import com.example.yukamalcoba.Fragments.*
+import com.example.yukamalcoba.fragment.*
+import com.example.yukamalcoba.view.InformasiActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {

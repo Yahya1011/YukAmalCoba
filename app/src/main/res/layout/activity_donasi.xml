@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
-        android:orientation="vertical"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/root_layout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
 
     <TextView
             android:layout_width="match_parent"
@@ -19,70 +22,101 @@
             android:layout_marginTop="10dp"
             android:gravity="center"
             android:textSize="20sp"/>
-    <TextView
+    <RadioGroup
+            android:layout_marginTop="30dp"
+            android:id="@+id/radio_group"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Payment For:"
-            android:textSize="16sp"
-            android:layout_marginTop="10dp"/>
-    <CheckBox
-            android:id="@+id/infaq"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Infaq"
-            android:layout_marginTop="5dp"
-            android:onClick="onCheckboxClicked"/>
-    <CheckBox
-            android:id="@+id/zakat"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Zakat"
-            android:onClick="onCheckboxClicked"/>
-    <CheckBox
-            android:id="@+id/wakaf"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Wakaf"
-            android:onClick="onCheckboxClicked"/>
+            android:padding="15dp"
+            >
+        <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Payment for :"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                />
+        <RadioButton
+                android:id="@+id/wakaf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wakaf"
+                android:onClick="radio_button_click"
+                />
+        <RadioButton
+                android:id="@+id/infaq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Infaq"
+                android:onClick="radio_button_click"
+                />
+        <RadioButton
+                android:id="@+id/zakat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zakat"
+                android:onClick="radio_button_click"
+                />
+    </RadioGroup>
+
     <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Nominal"
             android:textSize="16sp"
+            android:layout_marginStart="15dp"
             android:layout_marginTop="10dp"/>
     <EditText
-            android:id="@+id/nominal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
             android:padding="10dp"/>
-    <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Sebagai Hamba Allah"
-            android:textSize="10sp"/>
-    <TextView
+<!--    <CheckBox-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Sebagai Hamba Allah"-->
+<!--            android:textSize="10sp"/>-->
+    <RadioGroup
+            android:id="@+id/grupRadio"
+            android:layout_marginTop="30dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Select Bank"
-            android:layout_marginTop="10dp"
-            android:textSize="16sp"/>
-    <CheckBox
-            android:id="@+id/bsm"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Bank Syariah Mandiri (BSM)"/>
-    <CheckBox
-            android:id="@+id/mandiri"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Bank Mandiri"/>
-    <CheckBox
-            android:id="@+id/bri"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Bank Rakyat Indonesia (BRI)"/>
+            android:padding="15dp"
+            >
+        <TextView
+                android:id="@+id/select_bank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Bank :"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                />
+        <RadioButton
+                android:id="@+id/mandiri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bank Mandiri"
+                android:onClick="radio_button_click"
+                />
+        <RadioButton
+                android:id="@+id/bsm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bank Syariah Mandiri"
+                android:onClick="radio_button_click"
+                />
+        <RadioButton
+                android:id="@+id/bri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bank Rakyat Indonesia"
+                android:onClick="radio_button_click"
+                />
+    </RadioGroup>
+
     <Button
-            android:id="@+id/donasi"
+            android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Donasi"

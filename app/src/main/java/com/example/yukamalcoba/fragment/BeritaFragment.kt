@@ -1,4 +1,4 @@
-package com.example.yukamalcoba.Fragments
+package com.example.yukamalcoba.fragment
 
 
 import android.os.Bundle

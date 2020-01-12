@@ -1,5 +1,6 @@
-package com.example.yukamalcoba.Activity
+package com.example.yukamalcoba.view.activity
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.*
@@ -8,7 +9,7 @@ import com.example.yukamalcoba.R
 
 class KeuanganActivity : AppCompatActivity() {
 
-    lateinit var button1: Button
+    lateinit var button5: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -43,12 +44,11 @@ class KeuanganActivity : AppCompatActivity() {
             }
         }
 
-//        button1 = findViewById<Button>(R.id.keuangan)
-//
-//        button1.setOnClickListener{
-//            val intent = Intent(this, LaporanFragment::class.java)
-//            startActivity(intent)
-//        }
-    }
+        button5 = findViewById<Button>(R.id.keuangan)
 
+        button5.setOnClickListener{
+            val intent = Intent(this, Informasi1Activity::class.java)
+            startActivity(intent)
+        }
+    }
 }

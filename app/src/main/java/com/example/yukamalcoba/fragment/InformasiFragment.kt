@@ -1,5 +1,4 @@
-package com.example.yukamalcoba.Fragments
-
+package com.example.yukamalcoba.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -17,9 +16,10 @@ private const val ARG_PARAM2 = "param2"
  * A simple [Fragment] subclass.
  *
  */
-class GaleriFragment : Fragment() {
+class InformasiFragment : Fragment() {
+
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?) =
-        inflater.inflate(R.layout.fragment_galeri, container, false)!!
-
+        inflater.inflate(R.layout.fragment_informasi, container, false)!!
 }
+
